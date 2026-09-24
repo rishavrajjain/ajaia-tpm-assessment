@@ -60,30 +60,33 @@ Records that could not be confidently cleaned:
 ## Task 3. Client status update
 
 **To:** Dana Okafor, VP Operations, Corrigan Peak Logistics
-**Subject:** Dispatch Exception Triage: Weekly Status, Amber (a correction and two asks)
+**Subject:** Dispatch Exception Triage: Status Amber, and what we need to get back to Green
 
 Hi Dana,
 
-**Status: Amber.** September 8 is still achievable, but it now depends on two things from your team this week. I also need to correct last Friday's update.
+**Status: Amber.** Terminal 3 is the biggest risk to September 8, and it needs your team's help this week. Below is exactly what it will take to get back to Green.
 
-**Correction to last week.** We reported Green with no blockers and called Terminal 3 a minor data validation task. That understated it. Right now, a share of Terminal 3 exceptions get no urgency score, which means the tool can't route them to a dispatcher. We should have flagged this more clearly. I now own it directly.
+**Correction to last week.** We reported Green with no blockers and called Terminal 3 a minor data validation task. That understated it. Right now, a share of Terminal 3 exceptions get no urgency score, so the tool can't route them to a dispatcher. For one of your three terminals, that means problems could go unseen. We should have flagged this more clearly, and I now own it directly.
 
-**What's on track.** Apart from the Terminal 3 issue and the fix below, ingestion, scoring and routing are working, and the dispatcher queue UI is on track for your team's review next week.
+**To get back to Green, we need:**
 
-**What we need from you**
-
-1. **Terminal 3 data: answers from your IT contact by Wednesday.** We need three things confirmed:
+**From your team**
+1. **Answers on Terminal 3 from your IT contact by Wednesday.** This is the critical path. We need three things confirmed:
    - Which fields Terminal 3 sends from FreightWorks.
    - Whether Terminal 3 timestamps are local time or UTC, and which timezone Terminal 3 is in. We're seeing both in the same export.
    - Whether the carrier code can be blank, and why.
 
-   Once we have the answers, the fix is about 2 days plus testing. **If we don't have answers by Friday,** we recommend going live on September 8 with Terminal 3 exceptions sent to a manual-review queue checked by a named dispatcher until the fix lands. Every exception would still reach a person; some just wouldn't be scored automatically at first. I'd rather agree that fallback with you now than decide it in launch week.
+   Once we have the answers, the fix takes about 2 days plus testing. Every day we wait comes straight out of our testing time before launch, so please treat this as the top priority. If a 30-minute call with your IT contact is faster than email, I'll set it up today.
+2. **The routing-rules review with your three terminal leads, held by next Wednesday.** We're reaching out to them today. A nudge from you would help get it onto their calendars.
 
-2. **Routing-rules review with your three terminal leads.** We're reaching out to them today to book a one-hour session. It needs to happen by next Wednesday so any rule changes go in before launch. A nudge from you would help get it onto their calendars.
+**From our side**
+- **Terminal 3 fix,** delivered within 2 days of your IT contact's answers, then tested.
+- **A reliability fix.** Our internal code review found a case where the same exception could be sent to a dispatcher twice. We're fixing and testing it before it ships, and I'll confirm in Friday's update that it's done.
+- **A safety net.** We're adding a rule so that anything the tool can't score goes to manual review, and nothing is silently dropped.
 
-**Also this week**
-- **Reliability fix.** Our internal code review found a case where the same exception could be sent to a dispatcher twice. It's being fixed and tested before it ships. We don't expect it to affect the date, and I'll confirm that in Friday's update.
-- **Safety net.** We're adding a rule so that anything the tool can't score goes to manual review, and nothing is silently dropped while Terminal 3 is being fixed.
+When those are done, we're back to Green.
+
+**What's on track.** Apart from Terminal 3 and the fix above, ingestion, scoring and routing are working, and the dispatcher queue UI is on track for your team's review next week.
 
 **Your COO's request for auto-reassign.** We recommend not adding it for September 8. It would change the tool from flagging a missed pickup for a dispatcher to moving the shipment to another carrier on its own. That touches carrier agreements, and it's hard to undo if it gets one wrong. Doing it safely needs backup-carrier rules, proper testing and an undo path, and we can't responsibly build those in three weeks. What you can tell him: on September 8, missed pickups go straight to the right dispatcher instead of a shared inbox. The first weeks of live data will show how often missed pickups happen and how dispatchers resolve them, which is exactly what we need to design auto-reassign well. We'll send you a Phase 2 outline by the end of next week, and I'm happy to join that conversation with him if it helps.
 
