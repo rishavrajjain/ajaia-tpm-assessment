@@ -102,7 +102,7 @@ Technical Project Manager, Ajaia ([ajaia.ai](https://ajaia.ai))
 
 I used Claude on every task: to break down the assignment, pressure-test my triage ranking, draft the status update, and write the cleaning script and its tests. I kept the judgment calls human: the ranking, declining auto-reassign, moving the status to Amber, and the rule that the script must never guess a carrier or silently convert a timezone. I also changed the AI's output in several places:
 - **Colour request:** it said to simply defer it. I changed that to "ask which colour first," because a two-minute question beats guessing and redoing work.
-- **Status email:** its draft was too soft on Terminal 3. It buried the ask and offered Dana a fallback in the same email, which gives her an easy reason not to chase her IT contact. I rewrote it around "here is what it takes to get back to Green," with clear asks for her team and commitments from ours. The fallback stays in my internal plan.
+- **Status email:** its draft wasn't direct enough about how serious Terminal 3 is, and it offered Dana a fallback in the same email, which gives her an easy reason not to chase her IT contact. I rewrote it around "here is what it takes to get back to Green," with clear asks for her team and commitments from ours. The fallback stays in my internal plan.
 - **Wording:** it used vague lines like "I now own it directly" and jargon like "critical path," which I rewrote in plain language. It also added a launch-calendar point that I cut, because it didn't change any decision.
 
 For the build, I didn't trust "it ran." I checked the output against values worked out by hand, and I had the script broken on purpose to confirm the tests fail when it guesses the carrier or stops flagging UTC.
