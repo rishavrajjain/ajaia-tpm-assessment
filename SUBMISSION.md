@@ -66,12 +66,12 @@ Hi Dana,
 
 **Status: Amber.** Terminal 3 is the biggest risk to September 8, and it needs your team's help this week. Below is exactly what it will take to get back to Green.
 
-**Correction to last week.** We reported Green with no blockers and called Terminal 3 a minor data validation task. That understated it. Right now, a share of Terminal 3 exceptions get no urgency score, so the tool can't route them to a dispatcher. For one of your three terminals, that means problems could go unseen. We should have flagged this more clearly. I'm now personally tracking it until it's fixed.
+**Correction to last week.** We reported Green with no blockers and called Terminal 3 a minor data validation task. That understated it. Right now, some Terminal 3 exceptions get no urgency score, so the tool can't route them to a dispatcher. For one of your three terminals, that means problems could go unseen. We should have flagged this more clearly. I'm now personally tracking it until it's fixed.
 
 **To get back to Green, we need:**
 
 **From your team**
-1. **Answers on Terminal 3 from your IT contact by Wednesday.** This is the critical path. We need three things confirmed:
+1. **Answers on Terminal 3 from your IT contact by this Wednesday.** This is the item most likely to delay launch. We need three things confirmed:
    - Which fields Terminal 3 sends from FreightWorks.
    - Whether Terminal 3 timestamps are local time or UTC, and which timezone Terminal 3 is in. We're seeing both in the same export.
    - Whether the carrier code can be blank, and why.
@@ -86,11 +86,11 @@ Hi Dana,
 
 When those are done, we're back to Green.
 
-**What's on track.** Apart from Terminal 3 and the fix above, ingestion, scoring and routing are working, and the dispatcher queue UI is on track for your team's review next week.
+**What's on track.** Apart from Terminal 3 and the two fixes above, ingestion, scoring and routing are working, and the dispatcher queue UI is on track for your team's review next week.
 
-**Your COO's request for auto-reassign.** We recommend not adding it for September 8. It would change the tool from flagging a missed pickup for a dispatcher to moving the shipment to another carrier on its own. That touches carrier agreements, and it's hard to undo if it gets one wrong. Doing it safely needs backup-carrier rules, proper testing and an undo path, and we can't responsibly build those in three weeks. What you can tell him: on September 8, missed pickups go straight to the right dispatcher instead of a shared inbox. The first weeks of live data will show how often missed pickups happen and how dispatchers resolve them, which is exactly what we need to design auto-reassign well. We'll send you a Phase 2 outline by the end of next week, and I'm happy to join that conversation with him if it helps.
+**Your COO's request for auto-reassign.** We recommend not adding it for September 8. It would change the tool from flagging a missed pickup for a dispatcher to moving the shipment to another carrier on its own. That touches carrier agreements, and a wrong reassignment is hard to undo. Doing it safely needs backup-carrier rules, proper testing and an undo path, and we can't responsibly build those in three weeks. What you can tell him: on September 8, missed pickups go straight to the right dispatcher instead of a shared inbox. The first weeks of live data will show how often missed pickups happen and how dispatchers resolve them, which is exactly what we need to design auto-reassign well. We'll send you a Phase 2 outline by the end of next week, and I'm happy to join that conversation with him if it helps.
 
-Next update Friday, or sooner if the Terminal 3 answers change the picture.
+Next update this Friday, or sooner if the Terminal 3 answers change the picture.
 
 Best,
 Rishav
