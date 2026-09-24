@@ -2,9 +2,9 @@
 
 **Video:** [VIDEO LINK — paste here]
 
-**Candidate:** [Your name]
+**Candidate:** Rishav
 **Build files:** https://github.com/rishavrajjain/ajaia-tpm-assessment (`normalize_exceptions.py`, `test_normalize.py`, `exceptions_raw.csv`)
-**Other work (optional):** [GitHub / past builds, or delete this line]
+**GitHub:** https://github.com/rishavrajjain
 
 Prepared for [Ajaia](https://ajaia.ai): Corrigan Peak Logistics, Dispatch Exception Triage engagement.
 
@@ -68,7 +68,7 @@ Hi Dana,
 
 **Correction to last week.** We reported Green with no blockers and called Terminal 3 a minor data validation task. That understated it. Right now, a share of Terminal 3 exceptions get no urgency score, which means the tool can't route them to a dispatcher. We should have flagged this more clearly. I now own it directly.
 
-**What's on track.** Ingestion, scoring and routing are working, and the dispatcher queue UI is on track for your team's review next week.
+**What's on track.** Apart from the Terminal 3 issue and the fix below, ingestion, scoring and routing are working, and the dispatcher queue UI is on track for your team's review next week.
 
 **What we need from you**
 
@@ -82,15 +82,15 @@ Hi Dana,
 2. **Routing-rules review with your three terminal leads.** We're reaching out to them today to book a one-hour session. It needs to happen by next Wednesday so any rule changes go in before launch. A nudge from you would help get it onto their calendars.
 
 **Also this week**
-- **Reliability fix.** Our internal code review found a case where the same exception could be sent to a dispatcher twice. It's being fixed and tested before it ships. No impact on the date.
-- **Safety net.** Until Terminal 3 is fixed, anything the tool can't score goes to manual review, so nothing is silently dropped.
+- **Reliability fix.** Our internal code review found a case where the same exception could be sent to a dispatcher twice. It's being fixed and tested before it ships. We don't expect it to affect the date, and I'll confirm that in Friday's update.
+- **Safety net.** We're adding a rule so that anything the tool can't score goes to manual review, and nothing is silently dropped while Terminal 3 is being fixed.
 
 **Your COO's request for auto-reassign.** We recommend not adding it for September 8. It would change the tool from flagging a missed pickup for a dispatcher to moving the shipment to another carrier on its own. That touches carrier agreements, and it's hard to undo if it gets one wrong. Doing it safely needs backup-carrier rules, proper testing and an undo path, and we can't responsibly build those in three weeks. What you can tell him: on September 8, missed pickups go straight to the right dispatcher instead of a shared inbox. The first weeks of live data will show how often missed pickups happen and how dispatchers resolve them, which is exactly what we need to design auto-reassign well. We'll send you a Phase 2 outline by the end of next week, and I'm happy to join that conversation with him if it helps.
 
 Next update Friday, or sooner if the Terminal 3 answers change the picture.
 
 Best,
-[Your name]
+Rishav
 Technical Project Manager, Ajaia ([ajaia.ai](https://ajaia.ai))
 
 ---
