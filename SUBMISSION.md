@@ -3,7 +3,7 @@
 **Video:** [VIDEO LINK — paste here]
 
 **Candidate:** [Your name]
-**Build files:** [link to repo/folder with `normalize_exceptions.py`, `test_normalize.py`, `exceptions_raw.csv`]
+**Build files:** https://github.com/rishavrajjain/ajaia-tpm-assessment (`normalize_exceptions.py`, `test_normalize.py`, `exceptions_raw.csv`)
 **Other work (optional):** [GitHub / past builds, or delete this line]
 
 Prepared for [Ajaia](https://ajaia.ai): Corrigan Peak Logistics, Dispatch Exception Triage engagement.
