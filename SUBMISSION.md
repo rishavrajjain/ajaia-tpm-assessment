@@ -66,7 +66,7 @@ Hi Dana,
 
 **Status: Amber.** Terminal 3 is the biggest risk to September 8, and it needs your team's help this week. Below is exactly what it will take to get back to Green.
 
-**Correction to last week.** We reported Green with no blockers and called Terminal 3 a minor data validation task. That understated it. Right now, a share of Terminal 3 exceptions get no urgency score, so the tool can't route them to a dispatcher. For one of your three terminals, that means problems could go unseen. We should have flagged this more clearly, and I now own it directly.
+**Correction to last week.** We reported Green with no blockers and called Terminal 3 a minor data validation task. That understated it. Right now, a share of Terminal 3 exceptions get no urgency score, so the tool can't route them to a dispatcher. For one of your three terminals, that means problems could go unseen. We should have flagged this more clearly. I'm now personally tracking it until it's fixed.
 
 **To get back to Green, we need:**
 
